@@ -1,0 +1,89 @@
+.loginContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  /* Form container */
+  .loginContainer form {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Label styling */
+  .loginContainer label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+    color: #333;
+  }
+  
+  /* Input field styling */
+  .loginContainer input[type="email"],
+  .loginContainer input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s;
+  }
+  
+  .loginContainer input[type="email"]:focus,
+  .loginContainer input[type="password"]:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  /* Error message styling */
+  .loginContainer p {
+    color: red;
+    font-size: 0.9rem;
+  }
+  
+  /* Button styling */
+  .loginContainer button {
+    padding: 12px;
+    font-size: 1.1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .loginContainer button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Additional styling for div container of form fields */
+  .loginContainer .email,
+  .loginContainer .password {
+    display: flex;
+    flex-direction: column;
+  }
+  /* login.css */
+
+img {
+  display: block;
+  margin: 0 auto; /* Centers the image horizontally */
+  width: 150px; /* Adjust the width as needed */
+  height: auto; /* Maintains the aspect ratio */
+  padding-bottom: 20px; /* Adds space below the image */
+}
+
+@media (max-width: 768px) {
+  img {
+      width: 100px; /* Smaller size for mobile devices */
+  }
+}
